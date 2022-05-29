@@ -1,0 +1,286 @@
+.images{
+    margin: 0;
+    padding: 0;
+     margin: 50px 45%; 
+}
+
+.españa{
+  width: 46rem;
+}
+
+.libros{
+    width: 20rem;
+}
+
+.margarita{
+    width: 15rem;
+}
+.megafono{
+    width: 15rem;
+}
+.maquillaje{
+    width: 15rem;
+}
+
+
+.ballet{
+    width: 26rem;
+}
+.fragil{
+   width: 18rem;
+}
+
+.artista{
+  width: 20rem;
+}
+
+.aries{
+   width: 25rem;
+}
+
+.sangre{
+    width: 16rem;
+    height: 18rem;
+}
+
+.kidney{
+  width: 20rem;
+}
+
+.gitana{
+  width: 28rem;
+}
+
+.jamon{
+    width: 27rem;
+  }
+  
+
+.spain{
+  width: 20rem;
+}
+
+.cocacola{
+ width: 14rem;
+}
+
+
+.ojos{
+   width: 17rem;
+
+}
+
+.images img{
+    /* width: 120px;
+    height: 120px; */
+    position: absolute;
+} 
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: chartreuse;
+}
+
+.fa-2x{
+    font-size: 1.5em;
+}
+
+.player{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 26rem;
+    margin-top: -3rem;
+}
+.wrapper{
+    padding: 30px;
+    
+}
+
+.details{
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin-top: -23px;
+
+
+}
+.track-art{
+    margin: 15px;
+    margin-left: -1rem;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px #ccc;
+    -webkit-box-shadow: 0px 6px 5px #ccc;
+    box-shadow: 0px 6px 5px #ccc;
+    -moz-border-radius: 190px;
+    -webkit-border-radius: 190px;
+    border-radius: 190px;
+}
+
+.track-name{
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: blue;
+}
+.track-artist{
+    margin-top: 42px;
+    font-size: 0.8rem;
+    margin-bottom: 11px;
+    margin-left: -14.5rem;
+    color: blue;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -13px;
+}
+.active{
+    color: blue;
+}
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track{
+    padding: 16px;
+    margin-top: -30px;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity .2s;
+    font-size: 4px;
+    margin-left: 55px;
+    color: blue;
+}
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+    opacity: 1.0;
+}
+
+
+.slider_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5rem;
+    margin-left: 2.5rem;
+    color: blue;
+}
+
+.seek_slider,
+.volume_slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 2px;
+    background: blue;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: greenyellow;
+    border: 3px solid blue;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.seek_slider:hover,
+.volume_slider:hover{
+    opacity: 1.0;
+}
+.seek_slider{
+    width: 35%;
+}
+.volume_slider{
+    width: 35%;
+}
+.current-time,
+.total-duration{
+    padding: 10px;
+    font-size: 0.7rem;
+}
+i.fa-volume-down,
+i.fa-volume-up{
+    padding: 6px;
+    font-size: 10px;
+}
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward{
+    cursor: pointer;
+}
+.randomActive{
+    color: blue;
+}
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+/* .loader{
+    margin-left: 2rem;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader .stroke{
+    background: #f1f1f1;
+    height: 150%;
+    width: 10px;
+    border-radius: 50px;
+    margin: 0px 5px;
+    animation: animate 1.4s linear infinite;
+} */
+@keyframes animate{
+    50%{
+        height: 20%;
+        background: black;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(7){
+    animation-delay: 0s;
+}

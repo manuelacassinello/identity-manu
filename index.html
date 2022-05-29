@@ -1,0 +1,190 @@
+<!-- CODED & DESIGNED BY MANUELA CASSINELLO -->
+
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Manuela</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+ <!-- <body onmousemove="move()">  -->
+    <div class="images" onmousemove="move()">
+        <img class="sangre" src="./images/sangre.png" alt="" id="i1" draggable="false" onmousedown="d1=true" onmouseup="d1=false">
+        <img class="cocacola" src="./images/cocacola.png" alt="" id="i2" draggable="false" onmousedown="d2=true" onmouseup="d2=false">
+        <img class="kidney" src="./images/kidney.png" alt="" id="i3" draggable="false" onmousedown="d3=true" onmouseup="d3=false"> 
+        <img class="españa" src="./images/spain.png" alt="" id="i4" draggable="false" onmousedown="d4=true" onmouseup="d4=false"> 
+        <img class="ojos" src="./images/ojo.png" alt="" id="i5" draggable="false" onmousedown="d5=true" onmouseup="d5=false"> 
+        <img class="gitana" src="./images/gitana.png" alt="" id="i6" draggable="false" onmousedown="d6=true" onmouseup="d6=false"> 
+        <img class="jamon" src="./images/jamon.png" alt="" id="i7" draggable="false" onmousedown="d7=true" onmouseup="d7=false"> 
+        <img class="artista" src="./images/artista.png" alt="" id="i8" draggable="false" onmousedown="d8=true" onmouseup="d8=false"> 
+        <img class="aries" src="./images/aries.png" alt="" id="i9" draggable="false" onmousedown="d9=true" onmouseup="d9=false"> 
+        <img class="fragil" src="./images/fragil.png" alt="" id="i10" draggable="false" onmousedown="d10=true" onmouseup="d10=false"> 
+        <img class="ballet" src="./images/ballet.png" alt="" id="i11" draggable="false" onmousedown="d11=true" onmouseup="d11=false"> 
+        <img class="libros" src="./images/libros.png" alt="" id="i12" draggable="false" onmousedown="d12=true" onmouseup="d12=false"> 
+        <img class="megafono" src="./images/megafono.png" alt="" id="i13" draggable="false" onmousedown="d13=true" onmouseup="d13=false"> 
+        <img class="maquillaje" src="./images/maquillaje.png" alt="" id="i14" draggable="false" onmousedown="d14=true" onmouseup="d14=false"> 
+        <img class="margarita" src="./images/margarita.png" alt="" id="i15" draggable="false" onmousedown="d15=true" onmouseup="d15=false"> 
+
+
+    </div>
+   
+        <div class="player">
+            <div class="wrapper">
+                <div class="details">
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+    
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+    
+                <!-- <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                </div> -->
+    
+                <div class="buttons">
+                    <!-- <div class="random-track" onclick="randomTrack()">
+                        <i class="fas fa-random fa-2x" title="random"></i>
+                    </div>
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div> -->
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <!-- <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                    <div class="repeat-track" onclick="repeatTrack()">
+                        <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                    </div> -->
+                </div>
+    
+                <!-- <div id="wave">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>   -->
+            </div>
+        </div>
+
+
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu es la mejor</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: flex-start;
+
+        }
+
+        .container .element{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body onload="move('element')">
+
+    
+
+    <div class="container">
+        <img class="element" src="./images/bb.JPG">
+        <img class="element" src="./images/bandera.png">
+        <div class="element" style="background:yellow;"></div>
+        <div class="element" style="background:blue;"> </div>
+        <div class="element" style="background:green;"></div>
+    </div>
+
+    <script>
+        var chooseElement;
+
+        const move = function(element){
+            const elements = document.querySelectorAll(".element")
+
+            elements.forEach(element => {
+                element.addEventListener("mousedown", () => {
+                  element.style.position = "absolute"
+                  chooseElement = element
+
+                 document.onmousemove = (e) => {
+                      var x = e.pageX
+                      var y = e.pageY
+
+                      chooseElement.style.left = x -50 + "px"
+                      chooseElement.style.top = y  -50 + "px"
+
+                      console.log(chooseElement)
+
+                    }
+
+                })
+            })
+            document.onmouseup = function(e){
+              chooseElement = null
+            }
+        }
+    </script>
+</body>
+</html> -->
